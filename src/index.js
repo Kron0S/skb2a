@@ -1,6 +1,6 @@
 import express from 'express'
 
-const app = express
+const app = express();
 app.get('/', async (req, res) => {
 	const a = parseFloat(req.query.a || 0);
 	const b = parseFloat(req.query.b || 0);
